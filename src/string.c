@@ -55,7 +55,7 @@ void AppendCStrToString(String str, char* cstr) {
     }
 }
 
-REPLACE_CSTR_STATUS ReplaceCStrInsideString(String src, char* patternCStr, char* replaceWithCStr) {
+void ReplaceCStrInsideString(String src, char* patternCStr, char* replaceWithCStr) {
     String pattern = InitializeStringFromCStr(patternCStr);
     String replaceWith = InitializeStringFromCStr(replaceWithCStr);
 
